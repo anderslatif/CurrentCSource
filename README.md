@@ -1,4 +1,10 @@
-ABCCoin - An SHA256 PoW Cloner!
+#### Source code for CurrentC 
 
-[![Build Status](https://travis-ci.org/RazorLove/abccoin.png?branch=master)](https://travis-ci.org/RazorLove/abccoin)
+An alt-coin (cryptocurrency) build on SHA256
+
+
+
+
+
+
 
