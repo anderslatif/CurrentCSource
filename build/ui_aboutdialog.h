@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'aboutdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,16 +10,16 @@
 #define UI_ABOUTDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDialog>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -43,12 +43,12 @@ public:
     void setupUi(QDialog *AboutDialog)
     {
         if (AboutDialog->objectName().isEmpty())
-            AboutDialog->setObjectName(QString::fromUtf8("AboutDialog"));
+            AboutDialog->setObjectName(QStringLiteral("AboutDialog"));
         AboutDialog->resize(593, 319);
         horizontalLayout_2 = new QHBoxLayout(AboutDialog);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         label_4 = new QLabel(AboutDialog);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setObjectName(QStringLiteral("label_4"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -59,24 +59,24 @@ public:
         horizontalLayout_2->addWidget(label_4);
 
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout_2->addItem(verticalSpacer_2);
 
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         label = new QLabel(AboutDialog);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
         label->setCursor(QCursor(Qt::IBeamCursor));
         label->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         horizontalLayout->addWidget(label);
 
         versionLabel = new QLabel(AboutDialog);
-        versionLabel->setObjectName(QString::fromUtf8("versionLabel"));
+        versionLabel->setObjectName(QStringLiteral("versionLabel"));
         versionLabel->setCursor(QCursor(Qt::IBeamCursor));
-        versionLabel->setText(QString::fromUtf8("0.3.666-beta"));
+        versionLabel->setText(QStringLiteral("0.3.666-beta"));
         versionLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         horizontalLayout->addWidget(versionLabel);
@@ -89,25 +89,25 @@ public:
         verticalLayout_2->addLayout(horizontalLayout);
 
         copyrightLabel = new QLabel(AboutDialog);
-        copyrightLabel->setObjectName(QString::fromUtf8("copyrightLabel"));
+        copyrightLabel->setObjectName(QStringLiteral("copyrightLabel"));
         copyrightLabel->setCursor(QCursor(Qt::IBeamCursor));
-        copyrightLabel->setText(QString::fromUtf8("Copyright &copy; 2009-YYYY The Bitcoin developers"));
+        copyrightLabel->setText(QStringLiteral("Copyright &copy; 2009-YYYY The Bitcoin developers"));
         copyrightLabel->setTextFormat(Qt::RichText);
         copyrightLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         verticalLayout_2->addWidget(copyrightLabel);
 
         copyrightLabel2 = new QLabel(AboutDialog);
-        copyrightLabel2->setObjectName(QString::fromUtf8("copyrightLabel2"));
+        copyrightLabel2->setObjectName(QStringLiteral("copyrightLabel2"));
         copyrightLabel2->setCursor(QCursor(Qt::IBeamCursor));
-        copyrightLabel2->setText(QString::fromUtf8("Copyright &copy; 2013 The ABCCoin Team"));
+        copyrightLabel2->setText(QStringLiteral("Copyright &copy; 2013 The ABCCoin Team"));
         copyrightLabel2->setTextFormat(Qt::RichText);
         copyrightLabel2->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         verticalLayout_2->addWidget(copyrightLabel2);
 
         label_2 = new QLabel(AboutDialog);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setCursor(QCursor(Qt::IBeamCursor));
         label_2->setWordWrap(true);
         label_2->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
@@ -119,7 +119,7 @@ public:
         verticalLayout_2->addItem(verticalSpacer);
 
         buttonBox = new QDialogButtonBox(AboutDialog);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Ok);
 
@@ -138,14 +138,14 @@ public:
 
     void retranslateUi(QDialog *AboutDialog)
     {
-        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About ABCCoin", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("AboutDialog", "<b>ABCCoin</b> version", 0, QApplication::UnicodeUTF8));
+        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About ABCCoin", 0));
+        label->setText(QApplication::translate("AboutDialog", "<b>ABCCoin</b> version", 0));
         label_2->setText(QApplication::translate("AboutDialog", "\n"
 "This is experimental software.\n"
 "\n"
 "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.\n"
 "\n"
-"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.", 0, QApplication::UnicodeUTF8));
+"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.", 0));
     } // retranslateUi
 
 };
