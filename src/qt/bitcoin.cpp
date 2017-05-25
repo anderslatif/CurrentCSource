@@ -174,12 +174,12 @@ int main(int argc, char *argv[])
 
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
-    QApplication::setOrganizationName("ABCCoin");
-    QApplication::setOrganizationDomain("abccoin.org");
+    QApplication::setOrganizationName("CurrentC");
+    QApplication::setOrganizationDomain("currentc.org");
     if (GetBoolArg("-testnet", false)) // Separate UI settings for testnet
-        QApplication::setApplicationName("ABCCoin-Qt-testnet");
+        QApplication::setApplicationName("CurrentC-Qt-testnet");
     else
-        QApplication::setApplicationName("ABCCoin-Qt");
+        QApplication::setApplicationName("CurrentC-Qt");
 
     // Now that QSettings are accessible, initialize translations
     QTranslator qtTranslatorBase, qtTranslator, translatorBase, translator;
@@ -200,7 +200,7 @@ int main(int argc, char *argv[])
     // ... then abccoin.conf:
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
-        QMessageBox::critical(0, QObject::tr("ABCCoin"),
+        QMessageBox::critical(0, QObject::tr("CurrentC"),
                               QObject::tr("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }

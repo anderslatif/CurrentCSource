@@ -166,7 +166,7 @@ public:
         copyAddress->setText(QApplication::translate("AddressBookPage", "&Copy Address", 0));
         showQRCode->setText(QApplication::translate("AddressBookPage", "Show &QR Code", 0));
 #ifndef QT_NO_TOOLTIP
-        signMessage->setToolTip(QApplication::translate("AddressBookPage", "Sign a message to prove you own a ABCCoin address", 0));
+        signMessage->setToolTip(QApplication::translate("AddressBookPage", "Sign a message to prove you own a CurrentC address", 0));
 #endif // QT_NO_TOOLTIP
         signMessage->setText(QApplication::translate("AddressBookPage", "Sign &Message", 0));
 #ifndef QT_NO_TOOLTIP

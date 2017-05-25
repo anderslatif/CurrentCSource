@@ -328,8 +328,8 @@ public:
 
     void retranslateUi(QDialog *RPCConsole)
     {
-        RPCConsole->setWindowTitle(QApplication::translate("RPCConsole", "ABCCoin - Debug window", 0));
-        label_9->setText(QApplication::translate("RPCConsole", "ABCCoin Core", 0));
+        RPCConsole->setWindowTitle(QApplication::translate("RPCConsole", "CurrentC - Debug window", 0));
+        label_9->setText(QApplication::translate("RPCConsole", "CurrentC Core", 0));
         label_5->setText(QApplication::translate("RPCConsole", "Client name", 0));
         clientName->setText(QApplication::translate("RPCConsole", "N/A", 0));
         label_6->setText(QApplication::translate("RPCConsole", "Client version", 0));
@@ -354,12 +354,12 @@ public:
         lastBlockTime->setText(QApplication::translate("RPCConsole", "N/A", 0));
         labelDebugLogfile->setText(QApplication::translate("RPCConsole", "Debug log file", 0));
 #ifndef QT_NO_TOOLTIP
-        openDebugLogfileButton->setToolTip(QApplication::translate("RPCConsole", "Open the ABCCoin debug log file from the current data directory. This can take a few seconds for large log files.", 0));
+        openDebugLogfileButton->setToolTip(QApplication::translate("RPCConsole", "Open the CurrentC debug log file from the current data directory. This can take a few seconds for large log files.", 0));
 #endif // QT_NO_TOOLTIP
         openDebugLogfileButton->setText(QApplication::translate("RPCConsole", "&Open", 0));
         labelCLOptions->setText(QApplication::translate("RPCConsole", "Command-line options", 0));
 #ifndef QT_NO_TOOLTIP
-        showCLOptionsButton->setToolTip(QApplication::translate("RPCConsole", "Show the ABCCoin-Qt help message to get a list with possible ABCCoin command-line options.", 0));
+        showCLOptionsButton->setToolTip(QApplication::translate("RPCConsole", "Show the CurrentC-Qt help message to get a list with possible CurrentC command-line options.", 0));
 #endif // QT_NO_TOOLTIP
         showCLOptionsButton->setText(QApplication::translate("RPCConsole", "&Show", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_info), QApplication::translate("RPCConsole", "&Information", 0));

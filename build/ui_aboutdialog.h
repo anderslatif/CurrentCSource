@@ -100,7 +100,7 @@ public:
         copyrightLabel2 = new QLabel(AboutDialog);
         copyrightLabel2->setObjectName(QStringLiteral("copyrightLabel2"));
         copyrightLabel2->setCursor(QCursor(Qt::IBeamCursor));
-        copyrightLabel2->setText(QStringLiteral("Copyright &copy; 2013 The ABCCoin Team"));
+        copyrightLabel2->setText(QStringLiteral("Copyright &copy; 2013 The CurrentC Team"));
         copyrightLabel2->setTextFormat(Qt::RichText);
         copyrightLabel2->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
@@ -138,8 +138,8 @@ public:
 
     void retranslateUi(QDialog *AboutDialog)
     {
-        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About ABCCoin", 0));
-        label->setText(QApplication::translate("AboutDialog", "<b>ABCCoin</b> version", 0));
+        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About CurrentC", 0));
+        label->setText(QApplication::translate("AboutDialog", "<b>CurrentC</b> version", 0));
         label_2->setText(QApplication::translate("AboutDialog", "\n"
 "This is experimental software.\n"
 "\n"
