@@ -467,9 +467,9 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		src/txdb.cpp \
 		src/qt/splashscreen.cpp \
 		src/qt/intro.cpp
-QMAKE_TARGET  = currentc-qt
+QMAKE_TARGET  = abccoin-qt
 DESTDIR       = #avoid trailing-slash linebreak
-TARGET        = currentc-qt
+TARGET        = abccoin-qt
 
 
 first: all
