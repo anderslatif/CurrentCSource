@@ -52,10 +52,10 @@ public:
         
         //// debug print
         hashGenesisBlock = genesis.GetHash();
-        while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
-            if (++genesis.nNonce==0) break;
-            hashGenesisBlock = genesis.GetHash();
-        }
+        //while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
+        //    if (++genesis.nNonce==0) break;
+        //    hashGenesisBlock = genesis.GetHash();
+        //}
 
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
@@ -66,7 +66,7 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d63264fe3b5374801835653e75766e15be7a83eefbc4bffe2925b1fa666"));
         assert(genesis.hashMerkleRoot == uint256("0xd58627f5acf3a3ca19b9893974a807651684028e25283aadb5baa5ba87bafc13"));
 
-        vSeeds.push_back(CDNSSeedData("192.168.8.102", "192.168.8.102"));
+        vSeeds.push_back(CDNSSeedData("46.101.233.200", "46.101.233.200"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = 76;
